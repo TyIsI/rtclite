@@ -118,7 +118,7 @@ from ....std.ietf.rfc6455 import HTTPError, serve_forever as websocket_serve_for
 
 
 logger = logging.getLogger('notify')
-configuration = {'iceServers': [{"url": "stun:stun.l.google.com:19302"}]}
+configuration = {'iceServers': [{"url": "stun:stun.stunprotocol.org"}]}
 
 
 class Space(object):

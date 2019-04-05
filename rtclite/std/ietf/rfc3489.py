@@ -24,7 +24,7 @@ except:
 logger = logging.getLogger('rfc3489')
 
 defaultPort = 3478 # default port number to use
-defaultServers = ['stun.l.google.com:19302', 'sip.iptel.org', 'stun.xten.net', 'stun2.wirlab.net'] # list of default known servers to use
+defaultServers = ['stun.stunprotocol.org','stun1.l.google.com:19302','stun1.l.google.com:19305','stun.services.mozilla.org'] # list of default known servers to use
 defaultServers = [(h, defaultPort if not p else int(p)) for h, i, p in [y.partition(':') for y in defaultServers]] # update the list with port number to have list elements as (host, port)
 
 # This is used as decorator to define a property.
